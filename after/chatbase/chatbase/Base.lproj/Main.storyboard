@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mhG-9j-qpT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="3Nk-Mz-bnU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mhG-9j-qpT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OBV-Gc-JNp">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="O3K-yq-WdN" kind="relationship" relationship="rootViewController" id="2zn-51-LEm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fhK-SY-p9K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="82.366071428571431"/>
+        </scene>
+        <!--Chat MenuVC-->
+        <scene sceneID="Anm-Jq-gLV">
+            <objects>
+                <tableViewController id="O3K-yq-WdN" customClass="ChatMenuVC" customModule="chatbase" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" id="H93-4H-QJX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                        <color key="sectionIndexBackgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="prk-X2-bAC">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="1cD-nH-F1m">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1cD-nH-F1m" id="E76-aN-Q8I">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" ambiguous="YES" text="8-Ball Bot" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxz-bM-j4S">
+                                                    <rect key="frame" x="72" y="27" width="314" height="6"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Magic8ball" translatesAutoresizingMaskIntoConstraints="NO" id="UJN-O0-E5Q">
+                                                    <rect key="frame" x="20" y="8" width="44" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="1OJ-8I-W7H"/>
+                                                        <constraint firstAttribute="width" secondItem="UJN-O0-E5Q" secondAttribute="height" multiplier="1:1" id="nuj-gb-8kh"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="UJN-O0-E5Q" secondAttribute="bottom" constant="8" id="1Bd-ix-Bdy"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Pxz-bM-j4S" secondAttribute="trailing" constant="8" id="1X6-4B-aU6"/>
+                                                <constraint firstItem="Pxz-bM-j4S" firstAttribute="top" relation="greaterThanOrEqual" secondItem="E76-aN-Q8I" secondAttribute="topMargin" constant="16" id="729-TN-VJz"/>
+                                                <constraint firstItem="UJN-O0-E5Q" firstAttribute="leading" secondItem="E76-aN-Q8I" secondAttribute="leading" constant="20" symbolic="YES" id="M0D-0V-mjM"/>
+                                                <constraint firstItem="Pxz-bM-j4S" firstAttribute="centerY" secondItem="E76-aN-Q8I" secondAttribute="centerY" id="Usp-g0-E3W"/>
+                                                <constraint firstItem="UJN-O0-E5Q" firstAttribute="centerY" secondItem="E76-aN-Q8I" secondAttribute="centerY" id="m2U-90-kl5"/>
+                                                <constraint firstItem="Pxz-bM-j4S" firstAttribute="leading" secondItem="UJN-O0-E5Q" secondAttribute="trailing" constant="8" symbolic="YES" id="uOD-hN-hwp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="O3K-yq-WdN" id="0Bx-bF-pNm"/>
+                            <outlet property="delegate" destination="O3K-yq-WdN" id="m9b-b3-wGs"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="MwB-n3-iPZ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KnY-kM-rdY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039.1304347826087" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Magic8ball" width="475" height="475"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
