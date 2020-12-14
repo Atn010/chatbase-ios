@@ -45,9 +45,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" ambiguous="YES" text="8-Ball Bot" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxz-bM-j4S">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" ambiguous="YES" text="8-Ball Bot" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxz-bM-j4S">
                                                     <rect key="frame" x="72" y="27" width="314" height="6"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -67,6 +67,7 @@
                                                 <constraint firstItem="UJN-O0-E5Q" firstAttribute="leading" secondItem="E76-aN-Q8I" secondAttribute="leading" constant="20" symbolic="YES" id="M0D-0V-mjM"/>
                                                 <constraint firstItem="Pxz-bM-j4S" firstAttribute="centerY" secondItem="E76-aN-Q8I" secondAttribute="centerY" id="Usp-g0-E3W"/>
                                                 <constraint firstItem="UJN-O0-E5Q" firstAttribute="centerY" secondItem="E76-aN-Q8I" secondAttribute="centerY" id="m2U-90-kl5"/>
+                                                <constraint firstAttribute="leading" secondItem="UJN-O0-E5Q" secondAttribute="trailing" priority="90" symbolic="YES" id="rSN-s0-rEl"/>
                                                 <constraint firstItem="Pxz-bM-j4S" firstAttribute="leading" secondItem="UJN-O0-E5Q" secondAttribute="trailing" constant="8" symbolic="YES" id="uOD-hN-hwp"/>
                                             </constraints>
                                         </tableViewCellContentView>

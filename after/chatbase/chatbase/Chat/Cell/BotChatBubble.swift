@@ -13,6 +13,10 @@ class BotChatBubble: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.selectionStyle = .none
+        textView.adjustsFontForContentSizeCategory = true
+        let font = UIFont.init(name: "Helvetica", size: 16)!
+        let metric = UIFontMetrics.init(forTextStyle: .body)
+        textView.font = metric.scaledFont(for: font)
         
     }
     

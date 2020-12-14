@@ -29,13 +29,19 @@ class ChatVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         sendButton.addTarget(self, action: #selector(textViewDidEndEditingTextview), for: .touchUpInside)
+        tableView.accessibilityIdentifier = "Chat Table View"
         
         chatInput.placeholder = "Type your Question"
+        chatInput.accessibilityLabel = "Message Input Box"
+        chatInput.accessibilityIdentifier = "Input Box"
         chatInput.layer.cornerRadius = 8
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "default")
         tableView.register(UINib.init(nibName: "UserChatBubble", bundle: nil), forCellReuseIdentifier: "user")
         tableView.register(UINib.init(nibName: "BotChatBubble", bundle: nil), forCellReuseIdentifier: "bot")
+        
+        sendButton.accessibilityLabel = "Send Message"
+        sendButton.accessibilityIdentifier = "Send Message"
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.chatMessages.append(.init(message: "I am 8-Ball Bot, I will answer all your questions", sender: "bot"))

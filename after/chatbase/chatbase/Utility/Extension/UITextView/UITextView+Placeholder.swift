@@ -73,6 +73,7 @@ extension UITextView: UITextViewDelegate {
             let labelHeight = placeholderLabel.frame.height
 
             placeholderLabel.frame = CGRect(x: labelX, y: labelY, width: labelWidth, height: labelHeight)
+            placeholderLabel.adjustsFontSizeToFitWidth = true
         }
     }
     
@@ -81,6 +82,7 @@ extension UITextView: UITextViewDelegate {
         let placeholderLabel = UILabel()
         
         placeholderLabel.text = placeholderText
+        placeholderLabel.adjustsFontSizeToFitWidth = true
         placeholderLabel.sizeToFit()
         
         placeholderLabel.font = self.font

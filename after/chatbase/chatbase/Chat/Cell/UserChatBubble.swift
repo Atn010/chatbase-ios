@@ -14,6 +14,9 @@ class UserChatBubble: UITableViewCell {
         super.awakeFromNib()
         self.selectionStyle = .none
         
+        textView.adjustsFontForContentSizeCategory = true
+        textView.font = UIFont.preferredFont(forTextStyle: .body)
+        
     }
     
     override func layoutSubviews() {
